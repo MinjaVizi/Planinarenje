@@ -1,0 +1,195 @@
+body {
+    font-family: South Island;
+    margin: 0;
+    padding: 0;
+    background-color: #FAE8E0; 
+    display: flex;
+    flex-direction: row; /* Promenjeno iz column u row */
+}
+
+header {
+    background-color: #063630; 
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: #14776c; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 150px;
+    background-color: #5a8883; 
+    padding-top: 10px;
+  
+    position: fixed;
+    top: 80px; /* Visina headera */
+    bottom: 60px; /* Visina footera */
+    left: 0;
+    z-index: 500; /* Smanjen da bi bio ispod headere i footera */
+    overflow-y: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: larger;
+    color: #5C3D2E; 
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #063630; 
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #063630; 
+    color: #14776c; 
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 23px;
+}
+
+footer p {
+    margin: 0;
+}
+
+main {
+    margin-top: 60px; /* Ovde se dodaje visina headere */
+    margin-left: 200px; /* Širina sidebar-a */
+    padding: 20px;
+    flex: 1; /* Omogućava da main zauzme preostali prostor */
+    width: calc(100% - 200px); /* Oduzima širinu sidebar-a od ukupne širine */
+    box-sizing: border-box;
+}
+
+#sidebar-logo {
+    width: 100%; /* Širina će biti prilagođena širini sidebar-a */
+    margin-bottom: 0px;
+    margin-top: 110px;
+}
+
+
+.pozadina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+.planinari {
+    margin-top: 100px;
+    width: 65%;
+}
+
+.content-kontakt {
+    display: flex; /* Postavlja flex kontejner */
+    align-items: center; /* Vertikalno centriranje sadržaja */
+    justify-content: start; /* Horizontalno poravnavanje na početak */
+  }
+  
+  .content-kontakt > div:first-child {
+    flex-shrink: 0; /* Sprečava smanjivanje slike */
+  }
+  
+ 
+  .kontakt-info {
+    display: flex;
+    flex-direction: column; /* Postavlja elemente u kolonu */
+    background-color: #5a8883ea; /* Boja pozadine */
+    color: #5C3D2E; /* Boja teksta */
+    margin-right: 50px; /* Razmak između slike i tekstualnog sadržaja */
+    padding: 30px; /* Padding oko tekstualnog sadržaja */
+    font-weight: bold; /* Boldovani tekst */
+  }
+  
+  .kontakt-item {
+    margin-bottom: 10px; /* Razmak između kontakt elemenata */
+  }
+  
+  .pocetnah1 {
+    position: absolute; /* Apsolutno pozicioniranje u odnosu na relativno pozicionirani roditelj */
+    top: 30%; /* Vertikalna pozicija, približno sredina ekrana */
+    left: 55%; /* Horizontalna pozicija, malo udesno od centra */
+    transform: translate(-50%, -50%); /* Precizno centriranje teksta */
+    font-size: 10em; /* Veličina fonta */
+    width: 60%; /* Širina elementa */
+    text-align: center; /* Centriranje teksta unutar elementa */
+    color: #5C3D2E; /* Bela boja teksta za bolji kontrast */
+    z-index: 10; /* Osigurava da tekst bude iznad pozadinske slike */
+    text-shadow: 2px 2px 8px #ffffff; /* Dodaje belu senku sa blagim zamućenjem */
+}
+  
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(30% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 5%;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: #063630;
+    font-size: 1.5em;
+    margin: 0.5em;
+  }
+  
+  .card-description {
+    color: #333;
+    padding: 0 0.5em 0.5em;
+  }
+  
+  .card-button {
+    display: block;
+    background-color: #5a8883;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .card-button:hover {
+    background-color: #063630;
+  }
+  
