@@ -5,41 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Planinarenje</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
 </head>
 <body>
     <img src="images/pozadinaa.png" alt="pozadina" class="pozadina">
+    <header>
+      <h1 class="naslov">Planinarenje sa Nikolom i Majom</h1>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>    
+        <ul>
+          <li><a href="Index.html">Početna</a></li>
+          <li><a href="Planine.html">Planine</a></li>
+          <li><a href="Ture.html">Ture</a></li>
+          <li><a href="Rezervacije.html">Rezervacije</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+        <img src="images/logo.png" alt="Logo" id="sidebar-logo">
+      </nav>
+    </header>
+    <main>
+        <form id="reservation-form">
+          <label for="tour">Izaberite turu:</label>
+          <select id="tour" name="tour" onchange="calculateTotal()">
+            <option value="2000">Mećavnik - Drvengrad 2000 RSD</option>
+            <option value="2500">Staza Iver 2500 RSD</option>
+            <option value="3000">Krug oko Mokre Gore 3000 RSD</option>
+          </select>
+          <label for="date">Datum:</label>
+          <input type="date" id="date" name="date" min="">
+          <label for="people">Broj osoba:</label>
+          <div id="people-counter">
+            <button type="button" id="decrement" onclick="updateTotal(-1)">-</button>
+            <input type="number" id="people" name="people" value="1" min="1" max="20" readonly>
+            <button type="button" id="increment" onclick="updateTotal(1)">+</button>
+          </div>
+          <label for="lunch">Ručak - hotel Čarobni breg - 1500RSD</label>
+          <input type="checkbox" id="lunch" name="lunch" onchange="calculateTotal()">
+          
+          <input type="text" id="name" name="name" placeholder="Ime">
+          <input type="text" id="surname" name="surname" placeholder="Prezime">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="tel" id="phone" name="phone" placeholder="Kontakt telefon">
 
-<header>
-  <h1 class="naslov">Planinarenje sa Nikolom i Majom</h1>
-  <div class="hamburger-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-<nav>
-    
-  <ul>
-    <li><a href="Index.html">Početna</a></li>
-    <li><a href="Planine.html">Planine</a></li>
-    <li><a href="Ture.html">Ture</a></li>
-    <li><a href="Rezervacije.html">Rezervacije</a></li>
-    <li><a href="Kontakt.html">Kontakt</a></li>
-  </ul>
-  <img src="images/logo.png" alt="Logo" id="sidebar-logo"> <!-- Dodajemo sliku ovde -->
+          <div id="total-container">
+            <p>Ukupno: <span id="total-price">0</span> RSD</p>
+          </div>
+          <input type="submit" value="Rezerviši">
 
-</nav>
-</header>
 
-<main>
-  
-</main>
-
-<footer>
-  <p>Sva prava zadrzana</p>
-</footer>
-
-<script src="JS/main.js"></script>
-
+        </form>
+      </main>
+    <footer>
+      <p>Sva prava zadržana</p>
+    </footer>
+    <script src="JS/main.js"></script>
 </body>
 </html>
