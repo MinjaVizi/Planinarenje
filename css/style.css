@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #FAE8E0; 
     display: flex;
-    flex-direction: row; /* Promenjeno iz column u row */
+    flex-direction: row; 
 }
 
 header {
@@ -26,10 +26,10 @@ nav {
     padding-top: 10px;
   
     position: fixed;
-    top: 80px; /* Visina headera */
-    bottom: 60px; /* Visina footera */
+    top: 80px; 
+    bottom: 60px; 
     left: 0;
-    z-index: 500; /* Smanjen da bi bio ispod headere i footera */
+    z-index: 500; 
     overflow-y: auto;
 }
 
@@ -75,16 +75,16 @@ footer p {
 }
 
 main {
-    margin-top: 60px; /* Ovde se dodaje visina headere */
-    margin-left: 200px; /* Širina sidebar-a */
+    margin-top: 60px; 
+    margin-left: 200px; 
     padding: 20px;
-    flex: 1; /* Omogućava da main zauzme preostali prostor */
-    width: calc(100% - 200px); /* Oduzima širinu sidebar-a od ukupne širine */
+    flex: 1; 
+    width: calc(100% - 200px); 
     box-sizing: border-box;
 }
 
 #sidebar-logo {
-    width: 100%; /* Širina će biti prilagođena širini sidebar-a */
+    width: 100%; 
     margin-bottom: 0px;
     margin-top: 110px;
 }
@@ -106,41 +106,41 @@ main {
 }
 
 .content-kontakt {
-    display: flex; /* Postavlja flex kontejner */
-    align-items: center; /* Vertikalno centriranje sadržaja */
-    justify-content: start; /* Horizontalno poravnavanje na početak */
+    display: flex; 
+    align-items: center; 
+    justify-content: start; 
   }
   
   .content-kontakt > div:first-child {
-    flex-shrink: 0; /* Sprečava smanjivanje slike */
+    flex-shrink: 0; 
   }
   
  
   .kontakt-info {
     display: flex;
-    flex-direction: column; /* Postavlja elemente u kolonu */
-    background-color: #5a8883ea; /* Boja pozadine */
-    color: #5C3D2E; /* Boja teksta */
-    margin-right: 50px; /* Razmak između slike i tekstualnog sadržaja */
-    padding: 30px; /* Padding oko tekstualnog sadržaja */
-    font-weight: bold; /* Boldovani tekst */
+    flex-direction: column; 
+    background-color: #5a8883ea; 
+    color: #5C3D2E; 
+    margin-right: 50px; 
+    padding: 30px; 
+    font-weight: bold; 
   }
   
   .kontakt-item {
-    margin-bottom: 10px; /* Razmak između kontakt elemenata */
+    margin-bottom: 10px; 
   }
   
   .pocetnah1 {
-    position: absolute; /* Apsolutno pozicioniranje u odnosu na relativno pozicionirani roditelj */
-    top: 30%; /* Vertikalna pozicija, približno sredina ekrana */
-    left: 55%; /* Horizontalna pozicija, malo udesno od centra */
-    transform: translate(-50%, -50%); /* Precizno centriranje teksta */
-    font-size: 10em; /* Veličina fonta */
-    width: 60%; /* Širina elementa */
-    text-align: center; /* Centriranje teksta unutar elementa */
-    color: #5C3D2E; /* Bela boja teksta za bolji kontrast */
-    z-index: 10; /* Osigurava da tekst bude iznad pozadinske slike */
-    text-shadow: 2px 2px 8px #ffffff; /* Dodaje belu senku sa blagim zamućenjem */
+    position: absolute;
+    top: 30%; 
+    left: 55%; 
+    transform: translate(-50%, -50%); 
+    font-size: 10em; 
+    width: 60%; 
+    text-align: center; 
+    color: #5C3D2E;
+    z-index: 10; 
+    text-shadow: 2px 2px 8px #ffffff; 
 }
   
 .card-container {
@@ -194,20 +194,20 @@ main {
   }
   .card-container-tura {
     display: flex;
-    justify-content: space-around; /* Ovo će ravnomerno rasporediti kartice */
-    flex-wrap: wrap; /* Ovo omogućava da se kartice prelome u novi red ako nema dovoljno mesta */
+    justify-content: space-around;
+    flex-wrap: wrap; 
     gap: 20px;
-    margin: 0 auto; /* Centriranje kontejnera */
-    padding: 20px; /* Dodaje prostor unutar kontejnera */
-    max-width: 1200px; /* Maksimalna širina kontejnera */
+    margin: 0 auto; 
+    padding: 20px; 
+    max-width: 1200px; 
     margin-top: 60px;
 
 }
 
 .card-tura {
     padding: 20px;
-    width: calc(33.333% - 20px); /* Postavljanje širine kartica na trećinu kontejnera umanjen za razmak */
-    margin-bottom: 20px; /* Razmak između redova */
+    width: calc(33.333% - 20px); 
+    margin-bottom: 20px; 
     transition: transform 0.2s;
     max-width: 250px;
     margin-top: 60px;
@@ -299,11 +299,11 @@ main {
   
 
   .upcoming-tours {
-    text-align: center; /* Centriranje teksta */
-    margin: 20px 0; /* Dodavanje margine iznad i ispod teksta */
-    font-size: 2em; /* Povećanje veličine fonta */
-    color: #53382b; /* Boja teksta */
-    text-shadow: 2px 2px 8px #000000; /* Dodaje belu senku sa blagim zamućenjem */
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 2em; 
+    color: #53382b; 
+    text-shadow: 2px 2px 8px #000000; 
     font-weight: bold;
 
 }
@@ -313,20 +313,20 @@ main {
     padding: 20px;
     border: 1px solid #063630;
     border-radius: 8px;
-    background-color: #426965a8; /* Tamna pozadina za bolji kontrast sa belim tekstom */
-    color: white; /* Boja teksta */
+    background-color: #426965a8; 
+    color: white; 
     margin-bottom: 100px;
   }
   
   #reservation-form label {
     margin-left: 10%;
 
-    display: inline-block; /* Labela će biti u istom redu sa input poljem */
+    display: inline-block; 
     margin-top: 5px;
-    margin-right: 10px; /* Dodaje se prostor između labele i input polja */
-    width: calc(100% - 120px); /* Širina labele */
+    margin-right: 10px; 
+    width: calc(100% - 120px); 
     font-weight: bold;
-    vertical-align: middle; /* Poravnavanje sa input poljima */
+    vertical-align: middle; 
   }
   
   #reservation-form input[type="text"],
@@ -334,7 +334,7 @@ main {
   #reservation-form input[type="tel"] {
     margin-left: 10%;
 
-    width: 70%; /* Sva polja iste širine */
+    width: 70%; 
     padding: 20px; 
     margin-top: 5px;
     margin-bottom: 15px;
@@ -342,14 +342,14 @@ main {
     border-radius: 4px;
     font-weight: bold;
     background-color: #ffffff;
-    color: #000; /* Boja unosa */
+    color: #000; 
   }
 
   #reservation-form select {
 
     margin-left: 10%;
 
-    width: 80%; /* Sva polja iste širine */
+    width: 80%; 
     padding: 20px; 
     margin-top: 5px;
     margin-bottom: 15px;
@@ -357,13 +357,13 @@ main {
     border-radius: 4px;
     font-weight: bold;
     background-color: #ffffff;
-    color: #000; /* Boja unosa */
+    color: #000; 
   }
 
   #reservation-form input[type="date"] {
     margin-left: 10%;
 
-    width: 70%; /* Sva polja iste širine */
+    width: 70%; 
     padding: 20px; 
     margin-top: 5px;
     margin-bottom: 15px;
@@ -371,7 +371,7 @@ main {
     border-radius: 4px;
     font-weight: bold;
     background-color: #ffffff;
-    color: #000; /* Boja unosa */
+    color: #000; 
 
   }
 
@@ -379,14 +379,14 @@ main {
   #reservation-form input[type="checkbox"] {
     margin-left: 10%;
 
-    margin-left: 10px; /* Razmak da se stavi desno od teksta */
+    margin-left: 10px; 
     vertical-align: middle;
   }
   
   #reservation-form input[type="submit"] {
     
 
-    width: 80%; /* Širina dugmeta kako bi se uklopilo sa ostalim poljima */
+    width: 80%; 
     background-color: #5a8883;
     color: white;
     padding: 20px;
@@ -407,13 +407,13 @@ main {
   #people-counter {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centriranje dugmića za broj osoba */
+    justify-content: center;
     width: 100%;
 
   }
   
   #people-counter button {
-    padding: 10px 20px; /* Povećan padding za bolji izgled */
+    padding: 10px 20px; 
     margin: 0 5px;
     background-color: #5a8883;
     color: white;
@@ -428,7 +428,7 @@ main {
   }
   
   #people-counter input {
-    width: 185px; /* Širina polja za unos broja osoba */
+    width: 185px; 
     text-align: center;
     padding: 10px;
     margin: 0 5px;
@@ -445,6 +445,66 @@ main {
  }
   
   #total-container p {
-    text-align: center; /* Centriranje teksta ukupnog iznosa */
+    text-align: center; 
+  }
+  .modal-content {
+    display: none; 
+    width: 100%; 
+    max-width: 700px;
+    margin: auto; 
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    main {
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .card-container-tura {
+      justify-content: center;
+    }
+  
+    .card-tura {
+      width: 80%;
+      max-width: none;
+    }
+  
+    #sidebar-logo {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card-tura {
+      width: 90%;
+    }
+  
+    .content-kontakt {
+      flex-direction: column;
+    }
+  
+    .kontakt-info {
+      margin-right: 0;
+    }
+  
+    .pocetnah1 {
+      font-size: 5em;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+    }
   }
   
